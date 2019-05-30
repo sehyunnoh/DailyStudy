@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const n = 5;
+      const d = 4;
+
+      const a = [5, 1, 2, 3, 4];
+
+      let result = leftRotation(a, d);
+      console.log(result);
+
+      function leftRotation(result, rotate) {
+        while (rotate > 0) {
+          let index;
+          for (let i = 0; i < result.length; i++) {
+            if (result[i] == n) {
+              index = i;
+              break;
+            }
+          }
+          let tmp = [];
+          if (index == 0) {
+            tmp = result.slice(1, result.length);
+            tmp.push(n);
+          } else {
+            for (let i = 0; i < index - 1; i++) {
+              tmp.push(result[i]);
+            }
+            tmp.push(n);
+            for (let i = index - 1; i < result.length; i++) {
+              if (result[i] != n) {
+                tmp.push(result[i]);
+              }
+            }
+          }
+
+          result = tmp;
+          rotate--;
+        }
+
+        return result;
+        console.log(result);
+      }
+
+      console.log(result);
+    </script>
+  </body>
+</html>
