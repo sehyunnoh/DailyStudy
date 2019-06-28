@@ -48,3 +48,17 @@ var person2 = new Human();
 ```js
 Human.prototype.name = 'test';
 ```
+
+## 비구조화 할당 문법의 활용
+```js
+const object = {
+	foo: 1,
+	bar: 2
+}
+
+function print({foo, bar}){
+	console.log(foo, bar);
+}
+
+print(object);
+```

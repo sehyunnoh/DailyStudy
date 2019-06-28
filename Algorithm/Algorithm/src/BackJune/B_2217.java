@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class B_2217 {
 
     public static void main(String[] args) throws Exception {
-        System.setIn(new FileInputStream("C:\\BackJuneInput/B_2217.txt"));
+        System.setIn(new FileInputStream("D:\\_workspace\\_DailyStudy\\Algorithm\\Algorithm\\src\\BackJune\\input\\B_2217.txt"));
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
