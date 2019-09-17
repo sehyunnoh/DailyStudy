@@ -81,4 +81,22 @@ print(object);
 >   if( index != -1) {
 >      gums = [...gums.slice(0, index), ...gums.slice(index + 1, gums.length)];
 >  }
->
+
+
+# hoisting 
+> let과 const는 적용 안됨.
+
+# Array 관련 유용한 함수
+```js
+let array = new Array(26).fill(-1);
+ce.includes(num)
+
+tmp.forEach(function(v) {
+  result += String.fromCharCode(v + 97);
+});
+
+function convertToNum(str) {
+  let array = str.split("");
+  return array.map(a => a.charCodeAt() - 97);
+}
+```
