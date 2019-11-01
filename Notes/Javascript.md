@@ -33,7 +33,7 @@ test(array, isCheck);
 ```
 
 # const 는 초기화 를 해줘야 선언 됨. 
-# ` -> grave accent , ~ -> tilt 
+# ` -> grave accent, bactic , ~ -> tilt 
 
 ## prototype
 > __proto__ => dunder proto 라고 함.
