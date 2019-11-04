@@ -1,6 +1,7 @@
 function almostIncreasingSequence(sequence) {
   let result = true;
   let a=sequence;
+  // 맨 앞에 숫자를 뺀다고 가정
   if(a[0] >= a[1]){
       for(let i=1; i<a.length-1;i++){
         if(a[i] >= a[i+1]){
@@ -10,13 +11,16 @@ function almostIncreasingSequence(sequence) {
       }
   }else{
     cnt = 0;
-    for(let i=0; i<a.length-1;i++){
+    for(let i=1; i<a.length-1;i++){
+      // 두번째 숫자부터 오른쪽 숫자와 비교해서 왼쪽이 크면 count 1 올림
       if(a[i]>=a[i+1]){
           cnt++;
+          // 연속으로 숫자 작아지면 false
           if(a[i-1] >= a[i+1]){
             result=false;
             break;
           }
+          // count 2 이상이면 false
           if(cnt>=2){
             result=false;
             break;
@@ -25,6 +29,7 @@ function almostIncreasingSequence(sequence) {
     }
   }
 
+  // 예외처리 
   if(result==false){
     result=true;
     cnt = 0;
