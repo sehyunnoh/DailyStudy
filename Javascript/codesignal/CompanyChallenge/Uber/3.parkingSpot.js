@@ -8,6 +8,8 @@ function parkingSpot(c, p, l) {
     Math.max(l[1], l[3])
   ];
 
+  console.dir(s);
+
   // luckspot에 공간이 없으면 false
   for (let i = s[0]; i <= s[2]; i++) {
     for (let j = s[1]; j <= s[3]; j++) {
