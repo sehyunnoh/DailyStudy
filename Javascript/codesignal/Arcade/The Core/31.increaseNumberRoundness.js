@@ -12,4 +12,5 @@ function increaseNumberRoundness(n) {
   return check.length > 1 ? true:false;
 }
 
+
 console.log(increaseNumberRoundness(101000)); // false
