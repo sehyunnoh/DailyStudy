@@ -9,6 +9,7 @@ async function closestStations(stations) {
   });
 
   const res = await Promise.all(promises);
+
   let min = Number.MAX_VALUE;
   for (let i = 0; i < res.length; i++) {
     for (let j = i + 1; j < res.length; j++) {
