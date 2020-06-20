@@ -1,6 +1,6 @@
 function commonCharacterCount(s1, s2) {
   let result = 0;
-  for (let i = 0; i < ~~s1.length; i++) {
+  for (let i = 0; i < s1.length; i++) {
     let index = s2.indexOf(s1[i]);
     if (index !== -1) {
       result++;
