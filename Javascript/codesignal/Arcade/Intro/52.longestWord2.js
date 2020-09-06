@@ -21,4 +21,5 @@ function longestWord(text) {
     return arr2[loc];
 }
 
-console.log(longestWord("Ready[[[, steady, go!")) //steady
+// console.log(longestWord("Ready[[[, steady, go!")) //steady
+console.log(longestWord("A!! AA[]z")) //steady

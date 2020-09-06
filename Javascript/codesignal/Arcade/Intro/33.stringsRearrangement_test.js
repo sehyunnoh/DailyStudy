@@ -1,5 +1,5 @@
 function stringsRearrangement(input) {
-  let array = permute(input);
+  let array = input;
 
   for (let i = 0; i < array.length; i++) {
     let varified = 1;
@@ -39,7 +39,4 @@ var permute = function (nums, set = [], answers = []) {
   return answers;
 };
 
-// console.log(stringsRearrangement(["ab", "bb", "aa"])); // true
 console.log(stringsRearrangement(["q", "q"])); // true
-// console.log(stringsRearrangement(["aba", "bbb", "bab"])) // false
-// console.log(stringsRearrangement(["abc", "abx", "axx", "abx", "abc"])) // true

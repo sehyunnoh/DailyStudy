@@ -1,15 +1,15 @@
 function longestWord(text) {
-    let arr = text.split(' ');
-    let arr2 = arr.map(x=>x.replace(/([^a-zA-Z])/g,''));
-    let max = 0;
-    let loc = 0;
-    for(let i=0; i<arr2.length; i++){
-        if( arr2[i].length > max ) {
-            max = arr2[i].length;
-            loc = i;
-        }
+  let arr = text.split(/([^a-zA-Z])/);
+  let arr2 = arr.filter((x) => x.match(/[a-zA-Z]*/)[0].length > 0);
+  let max = 0;
+  let result = "";
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i].length > max) {
+      max = arr2[i].length;
+      result = arr2[i];
     }
-    return arr2[loc];
+  }
+  return result;
 }
 
-console.log(longestWord("Ready[[[, steady, go!")) //steady
+console.log(longestWord("Ready[[[, steady, go!")); //steady
